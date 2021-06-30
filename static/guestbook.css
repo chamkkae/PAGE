@@ -1,0 +1,136 @@
+/* 스크롤 박스 */
+.content {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 1rem;
+    overflow: auto;
+}
+
+/* 방명록 박스 */
+.guest-box {
+    height: 180px;
+    margin: 0 15px;
+    border: 1px solid #BE81F7;
+    border-top: none;
+}
+
+/* 마지막 방명록 박스 여백 */
+.content .guest-box:last-child {
+    margin-bottom: 15px;
+}
+
+/* 방명록 헤더 */
+.guest-header {
+    height: 18%;
+    margin-top: 15px;
+    background-color: #E3CEF6;
+    border-top: 2px solid #BE81F7;
+    display: flex;
+}
+
+/* 방명록 번호 */
+.guest-header span:first-child {
+    font-size: 13px;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+/* 방명록 작성자 이름 */
+.guest-header span:nth-child(2) {
+    font-size: 15px;
+    font-weight: bold;
+    color: #23397B;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* 방명록 작성일시 */
+.guest-header span:last-child {
+    font-size: 12px;
+    color: #505050;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+/* 방명록 메인 영역 - 사진, 글 */
+.guest-main {
+    width: auto;
+    height: 81%;
+    display: flex;
+}
+
+/* 방문자 사진 영역 */
+.guest-image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-left: 27px;
+    background-size: contain;
+    border-radius: 3px;
+    border: 1px solid #909090;
+    /* 방문자 사진을 중앙으로 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 방문자 배경 사진 */
+.background1 { /* 첫 번째 방명록 */
+    background-image: url(./images/background1.jpg);
+}
+.background2 { /* 두 번째 방명록 */
+    background-image: url(./images/background2.jpg);
+}
+.background3 { /* 세 번째 방명록 */
+    background-image: url(./images/background3.jpg);
+}
+.background4 { /* 네 번째 방명록 */
+    background-image: url(./images/background4.jpg);
+}
+
+/* 방문자 프로필 사진 - 이미지 파일 */
+.guest-image > img {
+    width: auto;
+    height: 85px;
+}
+
+/* 방명록 글 영역 */
+.guest-text {
+    flex: 1;
+    height: 100%;
+    font-size: 15px;
+    padding-left: 27px;
+    display: table;
+}
+
+/* 방명록 글을 중앙으로 정렬 */
+.guest-text > p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* 비밀 방명록 박스 */
+.secret-box {
+    border: 1px solid #EEC58C;
+    border-top: none;
+}
+
+/* 비밀 방명록 헤더 */
+.secret-box .guest-header {
+    background-color: #FEEDD2;
+    border-top: 2px solid #EEC58C;
+}
+
+/* 비밀 방명록 메시지 */
+.guest-text span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #F18902;
+}
+
+.guest-text span:last-of-type {
+    color: #FAAC58;
+}

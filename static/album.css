@@ -1,0 +1,63 @@
+/* 전체 공간 */
+.content {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 2rem;
+  right: 1rem;
+  overflow: auto;
+}
+
+/* 사진첩 게시물 박스 */
+.photo-box {
+  height: 450px;
+  text-align: center;
+  margin: 0 15px;
+  border: 1px solid #BE81F7;
+  border-top: none;
+}
+
+/* 마지막 게시물 박스 여백 */
+.content .photo-box:last-child {
+  margin-bottom: 15px;
+}
+
+/* 게시물 제목 */
+.photo-title {
+  display: flex;
+  height: 8%;
+  margin: 15px 0 3px 0;
+  background-color: #E3CEF6;
+  border-top: 3px solid #BE81F7;
+}
+
+/* 게시물 제목 사이드 - 스크랩 표시 */
+.title-side {
+  flex: 0.2;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+/* 게시물 제목 가운데 */
+.title-main {
+  flex: 1;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+/* 사진 삽입하는 공간 */
+.photo {
+  height: 75%;
+  margin: 7px 0;
+}
+
+/* 이미지 파일 */
+img {
+  width: auto;
+  height: 100%;
+}
+
+/* 게시물 글 */
+.photo-text {
+  height: 7%;
+}

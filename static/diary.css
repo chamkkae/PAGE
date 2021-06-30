@@ -1,0 +1,127 @@
+/* 기타 CSS 속성 */
+.color-blue {
+    color: blue;
+}
+
+/* 달력 영역 */
+.date-box {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    height: 4rem;
+    border-radius: 3px;
+    border: 1px solid #CECECE;
+    display: flex;
+    align-items: center;
+}
+
+/* 달력 - 오늘 날짜 및 요일 */
+.today-box {
+    flex: 0 0 2rem;
+    margin: 0 1.5rem;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: #B404AE;
+}
+
+/* 달력 - 날짜 목록 */
+.date-list {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 120%;
+}
+
+/* 달력 - 날짜 */
+.date {
+    flex: 0 0 1.5rem;
+    color: #505050;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* 달력 -> 다이어리 링크 */
+.date > a {
+    text-decoration: none;
+    color: #505050;
+}
+
+/* 스크롤 영역 */
+.content {
+    position: absolute;
+    top: 6rem;
+    bottom: 1rem;
+    left: 2rem;
+    right: 1rem;
+    overflow: auto;
+}
+
+/* 다이어리 영역 */
+.diary-box {
+    height: 300px;
+    margin: 0 15px;
+    border: 1px solid #CECECE;
+    border-top: none;
+}
+
+/* 다이어리 헤더 */
+.diary-header {
+    height: 10%;
+    margin-top: 15px;
+    padding: 30px 30px 20px 30px;
+    border-top: 1px solid #CECECE;
+}
+
+/* 다이어리 날짜 */
+.diary-date {
+    color: #3B87AB;
+    font-size: 90%;
+}
+
+/* 다이어리 내용 */
+.diary-text {
+    height: 70%;
+    text-align: center;
+}
+
+/* 비밀일기 버튼 영역 */
+.secret-btn-box {
+    width: 230px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* 비밀일기 버튼 - 숨기기 */
+.secret-btn {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 500ms ease-in all;
+}
+
+/* 비밀일기 버튼 - 보이기 */
+.secret-btn:hover {
+    background-color: #CA98FC;
+}
+
+/* 비밀일기 버튼 - 클릭 */
+.secret-btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+/* 비밀일기 영역 */
+#secret-box {
+    margin-bottom: 15px;
+    display: none;
+}

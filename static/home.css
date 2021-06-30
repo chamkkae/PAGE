@@ -1,0 +1,189 @@
+/**
+  * .content-container > .box
+  * - 목적 : 주요 내용을 위한 영역 생성
+  * - 컨테이너 : .box
+  * - 아이템 : .content
+  */
+.content {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+}
+
+/**
+  * .box > .content
+  * - 목적 : 최근 소식, 미니룸을 위한 영역 생성
+  * - 컨테이너 : .content
+  * - 아이템 : .update-box, .miniroom-box
+  */
+.update-box {
+  width: 100%;
+  height: 30%;
+}
+
+.miniroom-box {
+  width: 100%;
+  height: 70%;
+}
+
+/**
+  * .content > .update-box
+  * - 목적 : 최근 소식의 대제목, 내용 표시
+  * - 컨테이너 : .update-box
+  * - 아이템 : .box-title, .update-content
+  */
+.box-title {
+  position: relative;
+  color: #B404AE;
+  font-size: 16px;
+  width: 100%;
+  height: 20%;
+}
+
+.update-content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/**
+  * .content > .miniroom-box
+  * - 목적 : 미니룸의 이름, 배경 표시
+  * - 컨테이너 : .miniroom-box
+  * - 아이템 : .box-title, .miniroom
+  */
+.miniroom {
+  height: 75%;
+  background-color: #D26EA5;
+  border-radius: 3px;
+  border: 1px solid #808080;
+}
+
+/**
+  * .update-box, .miniroom-box > .box-title
+  * - 목적 : 대제목 표시
+  * - 컨테이너 : .box-title
+  * - 아이템 : .title-text
+  */
+.title-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.box-title .title-text:nth-child(2) {
+  right: 0;
+}
+
+/**
+  * .update-box > .update-content
+  * - 목적 : 최근 소식과 메뉴 표시
+  * - 컨테이너 : .update-content
+  * - 아이템 : .news-list, menu-list
+  */
+.news-list {
+  width: 47%;
+  border-top: 1px solid #808080;
+}
+
+.menu-list {
+  width: 47%;
+  border-top: 1px dotted #808080;
+}
+
+/**
+  * .update-content > .news-list
+  * - 목적 : 최근 소식 목록 표시
+  * - 컨테이너 : .news-list
+  * - 아이템 : .news-line
+  */
+.news-line {
+  width: 100%;
+  height: 25%;
+}
+
+/**
+  * .news-list > .news-line
+  * - 목적 : 최근 소식 하나씩 표시
+  * - 컨테이너 : .news-line
+  * - 아이템 : .icon, .news-title
+  */
+.icon {
+  width: 50px;
+  height: fit-content;
+  color: #FFFFFF;
+  border-radius: 5px;
+  font-size: 13px;
+  text-align: center;
+  padding: 1px;
+  margin: 4.5px 4.5px 4.5px 0;
+  display: inline-block;
+}
+
+.news-title {
+  font-size: 13px;
+  padding: 1px;
+  margin-left: -5px;
+  display: inline-block;
+}
+
+.album-icon {background-color: #F15F5F;}
+.board-icon {background-color: #617DC1;}
+
+/**
+  * .update-content > .menu-list
+  * - 목적 : 메뉴 목록 표시
+  * - 컨테이너 : .menu-list
+  * - 아이템 : .menu-line
+  */
+.menu-line {
+  display: flex;
+  border-bottom: 1px dotted #808080;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+/**
+  * .menu-list > .menu-line
+  * - 목적 : 메뉴 하나씩 표시
+  * - 컨테이너 : .menu-line
+  * - 아이템 : .menu-block
+  */
+.menu-block {
+  width: 50%;
+  text-align: left;
+  font-size: 12px;
+}
+
+/**
+  * .menu-line > .menu-block
+  * - 목적 : 메뉴의 제목, 개수 표시
+  * - 컨테이너 : .menu-block
+  * - 아이템 : .menu-title, .menu-number
+  */
+.menu-title {
+  font-weight: 600;
+}
+
+.menu-number {
+  font-size: 11px;
+  color: #003399;
+}
+
+/**
+  * .miniroom-box > .miniroom
+  * - 목적 : 미니룸 gif 표시
+  * - 컨테이너 : .miniroom
+  * - 아이템 : .puppy-in-box
+  */
+.puppy-in-box {
+  background: url(./images/miniroom.gif) repeat;
+  width: 100%;
+  height: 205px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 55px;
+}
